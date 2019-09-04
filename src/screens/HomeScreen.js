@@ -1,6 +1,5 @@
 import React from 'react';
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
-import ListScreen from './ListScreen';
 
 const HomeScreen = ({ navigation }) => {
 
@@ -20,6 +19,18 @@ const HomeScreen = ({ navigation }) => {
         onPress = {() => navigation.navigate('Image')}
         title = "Go to Image Screen"
     />
+    <Button
+        onPress = {() => navigation.navigate('Counter')}
+        title = "Go to Counter Screen"
+    />
+    <Button
+        onPress = {() => navigation.navigate('Color')}
+        title = "Go to Color Screen"
+    />
+    <Button
+        onPress = {() => navigation.navigate('Square')}
+        title = "Go to Square Color Screen"
+    />
 
   </View>
   );
@@ -27,7 +38,8 @@ const HomeScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    fontSize: 30,
+    textAlign: "center"
   }
 });
 
